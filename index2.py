@@ -13,10 +13,15 @@ def greet():
                 "before, you might see a few flaws in the Dockerfile below. But, don’t worry! We’ll go over them. "
 
     bullet_point=["Installing the Github integration for Slack", "Getting Started", "Need help?"]
+    paragraph2= "When you install the new GitHub integration for Slack in your Slack workspace, you'll be prompted to move over all of your existing subscriptions - so getting set up again is easy. As you enable individual subscriptions in the new app, your settings will be automatically migrated and subscriptions in the legacy app will be disabled."
 
-    table_info={
-        1:''
-    }
+    #table and table list should be all stored in a dictionary in the future
+    table_title = ['Event', 'Is Filtered']
+    # table_list = {
+    #     'Pull':'✅ Yes',
+    #     'Deployment': '❌ No',
+    # }
+
     code = "RUN yarn install --production"
 
     return render_template(
@@ -27,7 +32,9 @@ def greet():
         sub_title=sub_title,
         main_title=main_title,
         image_about=image_about,
-        bullet_point=bullet_point
+        bullet_point=bullet_point,
+        table_title=table_title,
+        paragraph2=paragraph2
     )
 
 if __name__ == "__main__":
