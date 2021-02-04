@@ -13,44 +13,41 @@
     tables
     -->
         <div class="container">
-            <div>
                   <h1>{{main_title}}</h1>
                   <img class="img-fluid" alt="Responsive image" src={{image_about}} >
                   <h2>{{sub_title}}</h2>
                   <p>{{paragraph}}</p>
             </div>
 
-            <div>
+            <div class="container">
                 <h2>Table of Contents</h2>
                     <ul>
                         {%- for line in bullet_point %}
-                         <a href="#table" ><li >{{ line }}</li></a>
+                         <a href="{{line.url}}" ><li >{{ line.name}}</li></a>
                         {% endfor %}
                     </ul>
             </div>
 
-            <div>
-
+            <div class="container">
                 <table id="table" class="table-info table table-striped">
-                    <tr>
-                       <th>Event</th>
-                       <th>Is Filtered</th>
-                    </tr>
-                    <tr>
-                        <td>Pull</td>
-                        <td>✅ Yes</td>
-                    </tr>
-                        <tr>
-                          <td>Deployment</td>
-                           <td>❌ No</td>
-                        </tr>
+                    {%- for name in table_title %}
+                         <tr>
+                             <th>{{name[0]}}</th>
+                             <th>{{name[1]}}</th>
+                         </tr>
+                    {% endfor %}
+                    {%- for line in table_list %}
+                         <tr>
+                             <td>{{line.name}}</td>
+                             <td>{{line.status}}</td>
+                         </tr>
+                    {% endfor %}
                 </table>
             </div>
 
-        <div>
-
-        </div>
-            {{paragraph2}}
+            <div class="container">
+                {{paragraph2}}
+            </div>
         </div>
     </body>
 </html>
