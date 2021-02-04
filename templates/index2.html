@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{browser_title}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+<!--highlighted text,
+inspect the (css),
+images,
+links
+tables
+-->
+    <div class="container">
+        <div>
+              <h1>{{main_title}}</h1>
+              <img class="img-fluid" alt="Responsive image" src={{image_about}} >
+              <h2>{{sub_title}}</h2>
+              <p>{{paragraph}}</p>
+        </div>
+
+        <div>
+            <h2>Table of Contents</h2>
+            <ul>
+                {%- for line in bullet_point %}
+                 <li href="#" >{{ line }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div>
+            <table class="table-info table table-striped">
+                <tr>
+                    <th>Event</th>
+                    <th>Is Filtered</th>
+                </tr>
+                <tr>
+                   <td>Pull</td>
+                    <td>✅ Yes</td>
+                </tr>
+                <tr>
+                   <td>Deployment</td>
+                    <td>❌ No</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
