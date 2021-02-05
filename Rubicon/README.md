@@ -1,6 +1,6 @@
-# Rubicon README
+# rubicon README
 
-This is the README for your extension "Rubicon". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "rubicon". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
@@ -48,6 +48,11 @@ Fixed issue #.
 Added features X, Y, and Z.
 
 -----------------------------------------------------------------------------------------------------------
+## Following extension guidelines
+
+Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+
+* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
 
 ## Working with Markdown
 
