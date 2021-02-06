@@ -29,8 +29,8 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
-    "compile": "webpack",
-    "watch": "concurrently \"rollup -c -w\" \"webpack --watch --config ./build/node-extension.webpack.config.js",
+    "compile": "webpack --config ./build/webpack.config.js",
+    "watch": "concurrently \"rollup -c -w\" \"webpack --watch --config ./build/webpack.config.js\"",
     "package": "webpack --mode production --devtool hidden-source-map",
     "test-compile": "tsc -p ./",
     "test-watch": "tsc -watch -p ./",
