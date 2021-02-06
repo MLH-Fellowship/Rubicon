@@ -28,7 +28,7 @@ export class HelloWorldPanel {
     // Otherwise, create a new panel.
     const panel = vscode.window.createWebviewPanel(
         HelloWorldPanel.viewType,
-      "VSinder",
+      "Rubicon",
       column || vscode.ViewColumn.One,
       {
         // Enable javascript in the webview
@@ -125,7 +125,7 @@ export class HelloWorldPanel {
   private _getHtmlForWebview(webview: vscode.Webview) {
     // // And the uri we use to load this script in the webview
     const scriptUri = webview.asWebviewUri(
-      vscode.Uri.joinPath(this._extensionUri, "media", "main.js")
+      vscode.Uri.joinPath(this._extensionUri, "out/compiled", "HelloWorld.js")
     );
 
     // Local path to css styles
@@ -159,17 +159,13 @@ export class HelloWorldPanel {
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				<link href="${stylesResetUri}" rel="stylesheet">
 				<link href="${stylesMainUri}" rel="stylesheet">
-        <script nonce="${nonce}">
-          
+        <script nonce="${nonce}"> 
         </script>
 			</head>
-      <body>
-      <h1>Hello World</h1>
-      <input/>
-      <button>hello</button>
-    <script src="${scriptUri}" nonce="${nonce}">
-
-			</body>
+        <body> 
+        
+        <script src="${scriptUri}" nonce="${nonce}">
+        </body>
 			</html>`;
   }
 }
