@@ -1,10 +1,14 @@
-
 import * as vscode from 'vscode';
 import { HelloWorldPanel } from './HelloWorldPanel';
+import { SidebarProvider } from './SidebarProvider';
+
 
 export function activate(context: vscode.ExtensionContext) {
+	const sidebarProvider = new SidebarProvider(context.extensionUri);
+	context.subscriptions.push(
+		vscode.window.registerWebviewViewProvider("rubicon-sidebar", sidebarProvider)
+	  );
 
-	console.log('Congratulations, your extension "rubicon" is now active!');
 
 	context.subscriptions.push(
 		vscode.commands.registerCommand('rubicon.helloWorld', () => {
@@ -12,11 +16,20 @@ export function activate(context: vscode.ExtensionContext) {
 		HelloWorldPanel.createOrShow(context.extensionUri);
 	})
 	);
-	
+	context.subscriptions.push(
+		vscode.commands.registerCommand('rubicon.refresh', () => {
+		HelloWorldPanel.kill();
+		HelloWorldPanel.createOrShow(context.extensionUri);
+		setTimeout(() => {
+		vscode.commands.executeCommand("workbench.action.webview.openDeveloperTools"
+			);
+		},500);
+		})
+	);
 	context.subscriptions.push(
 		vscode.commands.registerCommand('rubicon.askQuestion', async () => {
 			const answer = await vscode.window.showInformationMessage(
-				"How was you day?", 
+				"How was your day?", 
 				"good", 
 				"bad"
 			);
