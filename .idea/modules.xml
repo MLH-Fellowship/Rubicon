@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Rubicon.iml" filepath="$PROJECT_DIR$/.idea/Rubicon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/rubicon_copy_to_revert_change.iml" filepath="$PROJECT_DIR$/.idea/rubicon_copy_to_revert_change.iml" />
     </modules>
   </component>
 </project>
