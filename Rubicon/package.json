@@ -13,7 +13,8 @@
     "onView:rubicon-sidebar",
     "onCommand:rubicon.helloWorld",
     "onCommand:rubicon.askQuestion",
-    "onCommand:rubicon.refresh"
+    "onCommand:rubicon.refresh",
+    "onCommand:rubicon.addDoc"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -51,6 +52,11 @@
         "command": "rubicon.refresh",
         "category": "Rubicon",
         "title": "Refresh"
+      },
+      {
+        "command": "rubicon.addDoc",
+        "category": "Rubicon",
+        "title": "Add Documentation From List"
       }
     ]
   },
