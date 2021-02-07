@@ -1,12 +1,8 @@
 {
   "version": 3,
   "file": "sidebar.css",
-  "sources": [
-    "Sidebar.svelte"
-  ],
-  "sourcesContent": [
-    "<script lang=\"ts\">\"use strict\";\r\nlet docs = [];\r\nlet count = 0;\r\n</script>\r\n\r\n<div>{count}</div>\r\n<button\r\n  on:click={() => {\r\n    count++;\r\n  }}\r\n  >increment\r\n</button>\r\n<input />\r\n\r\n<style>\r\n  div {\r\n    color: pink;\r\n  }\r\n</style>\r\n"
-  ],
+  "sources": [],
+  "sourcesContent": [],
   "names": [],
-  "mappings": "AAeE,GAAG,cAAC,CAAC,AACH,KAAK,CAAE,IAAI,AACb,CAAC"
+  "mappings": ""
 }
