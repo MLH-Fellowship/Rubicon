@@ -1,0 +1,10 @@
+.body {
+  background-image: url('assets-rubicon/background.png');
+}
+
+
+.jumbotron{
+ background-image: url('assets-rubicon/background.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+}
