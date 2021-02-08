@@ -28,7 +28,7 @@ On the back end
 2. We are proud that we didnt give up and tried our best to have the basic features done.
 
 ## What we learned🌱  
-- Not to underestimate the **"simplicity"** of code extensions especily if building them for the first time since there is a lot of fucntinalities envovled
+- Not to underestimate the **"simplicity"** of code extensions especily if building them for the first time since there is a lot of functionalities envovled
 - Backend with databases is something we got stuck in and want to learn more about so that next time both of us are experienced with it
 
 ## What's next for Rubicon🚀
