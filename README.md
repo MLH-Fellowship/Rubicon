@@ -3,7 +3,7 @@
 Rubicon is a VScode extension that allows developers to make the timeconsuming task of writing documentaiton easier.
 
 ## Inspiration☀️ 
-Currently the process of writing documentation is After discovering Jinja's capabilities of rendering templates, we wanted to use Jinja to help convert user's documentation input, into exportable or saved files.
+Currently the process of writing documentation is tedious. After discovering Jinja's capabilities of rendering templates, we wanted to use Jinja to help convert user's documentation input, into exportable or saved files. This will allow users to write documentation faster and in the same evironment that they are used to.
 
  <p align="center">
  <img  src="https://media.giphy.com/media/vJJILrBwPx2pT74eqA/giphy.gif" width="650" height="350"/></p>
@@ -18,7 +18,10 @@ Currently the process of writing documentation is After discovering Jinja's capa
 - [x] Jinja's templates can be exported to html, or Github README file     
 
 ## How we built it💻    
-On the back end 
+*On the back end 
+* For the templates for documentations we used Jinja and Flask.
+* For the connection with the backend and conversion between html and readme we used node js.
+
 ## Challenges we ran into🐢   
 - One of the most time consuming challenge was **building out the VSCode extension**. Neither of us have build extensions before yet because the whole point of our project is to give users the ability to write documentation **while  they code**, we couldnt give up. Most of all  it was challenging to work with Typescript + Webpack since none of us used Typescript & Svelte before as well as the VSCode Webviews API's which have many functionalities that have to be researched & configured. 
 - Converting user's input into Jinja's templates that can be exported was something we had to think through for some time yet we managed to make it work with static data.
@@ -28,16 +31,19 @@ On the back end
 2. We are proud that we didnt give up and tried our best to have the basic features done.
 
 ## What we learned🌱  
-- Not to underestimate the **"simplicity"** of code extensions especily if building them for the first time since there is a lot of functionalities envovled
-- Backend with databases is something we got stuck in and want to learn more about so that next time both of us are experienced with it
+- Not to underestimate the **"simplicity"** of code extensions especily if building them for the first time since there is a lot of functionalities envovled.
+- Backend with databases is something we got stuck in and want to learn more about so that next time both of us are experienced with it.
+- Github features that allow to collaborated easier.
+- Github best practices.
 
 ## What's next for Rubicon🚀
 For our next steps, we want to enhace and add on the following elements to Rubicon:
-1. Add github authentication - this will add a layer of security as well as help to save the user's input
-2. Connect Rubicon to a database so that all the files are saved  - this will allow the user to access previous or current templates
-3. Allow the user to access saved templates through Rubicon's website
-4. Allow user to pick a variety of Jinja templates - developers have different purposes when writing documentation , we want to tailor documentation to their goals
-5. Publish the extension in the VSCode marketplace
+1. Add github authentication - this will add a layer of security as well as help to save the user's input.
+2. Connect Rubicon to a database so that all the files are saved  - this will allow the user to access previous or current templates.
+3. Allow the user to access saved templates through Rubicon's website.
+4. Allow user to pick a variety of Jinja templates - developers have different purposes when writing documentation , we want to tailor documentation to their goals.
+5. Publish the extension in the VSCode marketplace.
+6. Connect the backend with the Jinja app.
 
 ## How to run this extension locally:
 ```
