@@ -1,11 +1,24 @@
 
 .jumbotron{
- background-image: url('../static/assets-rubicon/background.png');
- background-size: cover;
- background-repeat: no-repeat;
+    background-image: url('../static/assets-rubicon/background2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    height: 4243px;
+    height: 100%;
     width: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+p{
+    text-align: left;
+    font: normal normal normal 74px/102px DINosaur;
+    font-size: 45px;
+    letter-spacing: 3px;
+    line-height: normal;
+    color: #DEDEEFF7;
+    opacity: 1;
 }
 
 .top-buffer {
@@ -13,9 +26,26 @@
 }
 
 .top-buffer-xs {
-    margin-top:400px;
+    margin-top:150px;
 }
 
+.header-container{
+    position: relative;
+    background: url(../static/assets-rubicon/header_title.png) no-repeat;
+    /*width: 1001px;*/
+    /*height: 1000px;*/
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    background: none!important;
+}
 .cube-container {
     position: relative;
     background: url(../static/assets-rubicon/spinning-circle.gif) no-repeat;
@@ -68,7 +98,6 @@
   .rotating {
     -webkit-animation: rotating 5s linear infinite;
     -moz-animation: rotating 5s linear infinite;
-    -ms-animation: rotating 5s linear infinite;
     -o-animation: rotating 5s linear infinite;
     animation: rotating 5s linear infinite;
   }
