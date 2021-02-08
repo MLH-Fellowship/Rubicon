@@ -18,7 +18,10 @@ Currently the process of writing documentation is After discovering Jinja's capa
 - [x] Jinja's templates can be exported to html, or Github README file     
 
 ## How we built it💻    
-On the back end 
+To create the templates for the documentation, we used Jinja and Flask on the backend. The template can be exported locally as an html or README file using a node.js request to the Jinja's rendered template.
+
+For the VSCode extension, we used Webviews API from VSCode to create the sidebar and the webview. Typescript was used to write the functionality and it was converted to JavaScript by using Webpack. For the front end of the extension we used Svelte to create the UI.
+
 ## Challenges we ran into🐢   
 - One of the most time consuming challenge was **building out the VSCode extension**. Neither of us have build extensions before yet because the whole point of our project is to give users the ability to write documentation **while  they code**, we couldnt give up. Most of all  it was challenging to work with Typescript + Webpack since none of us used Typescript & Svelte before as well as the VSCode Webviews API's which have many functionalities that have to be researched & configured. 
 - Converting user's input into Jinja's templates that can be exported was something we had to think through for some time yet we managed to make it work with static data.
