@@ -1,8 +1,12 @@
 {
   "version": 3,
   "file": "sidebar.css",
-  "sources": [],
-  "sourcesContent": [],
+  "sources": [
+    "Sidebar.svelte"
+  ],
+  "sourcesContent": [
+    "<script lang=\"ts\">\"use strict\";\r\nlet todos = [];\r\nlet text = \"\";\r\n</script>\r\n\r\n<h1>Start Documentation</h1>\r\n<img\r\n  src=\"https://i.pinimg.com/originals/58/69/c3/5869c33465ee74da4d210a02fed95cd7.gif\"\r\n  alt=\"Girl in a jacket\"\r\n  width=\"500\"\r\n  height=\"600\"\r\n/>\r\n\r\n<p>Write short notes:</p>\r\n<form\r\n  on:submit|preventDefault={() => {\r\n    todos = [{ text, completed: false }, ...todos];\r\n    text = \"\";\r\n  }}\r\n>\r\n  <input bind:value={text} />\r\n</form>\r\n\r\n<ul>\r\n  {#each todos as todo (todo.text)}\r\n    <li\r\n      class:complete={todo.completed}\r\n      on:click={() => {\r\n        todo.completed = !todo.completed;\r\n      }}\r\n    >\r\n      {todo.text}\r\n    </li>\r\n  {/each}\r\n</ul>\r\n\r\n<button\r\n  on:click={() => {\r\n    tsvscode.postMessage({\r\n      type: \"onInfo\",\r\n      value: \"info message \",\r\n    });\r\n  }}\r\n>\r\n  Export File</button\r\n>\r\n\r\n<style>\r\n  .complete {\r\n    text-decoration: line-through;\r\n  }\r\n</style>\r\n"
+  ],
   "names": [],
-  "mappings": ""
+  "mappings": "AAgDE,SAAS,eAAC,CAAC,AACT,eAAe,CAAE,YAAY,AAC/B,CAAC"
 }
