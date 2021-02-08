@@ -22,6 +22,19 @@ Currently the process of writing documentation is After discovering Jinja's capa
 - [x] Jinja renders user input and renders it into to a formated documentation template     
 - [x] Jinja's templates can be exported to html, or Github README file     
 
+## Example of documentation styles:
+##### example 1
+<kbd>
+<img  src="Rubicon/assets/Screen Shot 2021-02-08 at 1.50.35 PM.png"/></p> 
+</kbd>
+
+
+##### example 2
+<kbd>
+<img  src="Rubicon/assets/Screen Shot 2021-02-08 at 1.51.50 PM.png"/></p> 
+</kbd>
+
+
 ## How we built it💻    
 To create the templates for the documentation, we used Jinja and Flask on the backend. The template can be exported locally as an html or README file using a node.js request to the Jinja's rendered template.
 
