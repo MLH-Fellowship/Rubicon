@@ -9,12 +9,17 @@ Currently the process of writing documentation is After discovering Jinja's capa
  <img  src="https://media.giphy.com/media/vJJILrBwPx2pT74eqA/giphy.gif" width="650" height="350"/></p>
  </p>  
  
-## User Stories (What it does)✨       
-- [x] User can access Rubicon through VScode editor    
-- [x] User can write title and description for the project   
-- [x] User can attach files and copy/paste code      
-- [x] User can go to the landing page and learn more about the extension     
-- [x] Jinja renders user input and renders it into to a formated documentation template    
+## User Stories (What it does)✨     
+
+ <p align="center">
+ <img  src="https://media.giphy.com/media/gfzNHINqT0f8dm9AJZ/giphy.gif" width="650" height="350"/></p>   
+ </p>  
+ 
+- [x] User can access Rubicon through VScode editor     
+- [x] User can write title and description for the project     
+- [x] User can attach files and copy/paste code        
+- [x] User can go to the landing page and learn more about the extension      
+- [x] Jinja renders user input and renders it into to a formated documentation template     
 - [x] Jinja's templates can be exported to html, or Github README file     
 
 ## How we built it💻    
