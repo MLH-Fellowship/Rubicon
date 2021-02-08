@@ -22,7 +22,7 @@ Currently the process of writing documentation is After discovering Jinja's capa
 - [x] Jinja renders user input and renders it into to a formated documentation template     
 - [x] Jinja's templates can be exported to html, or Github README file     
 
-## Example of documentation styles:
+## Example of documentation styles 🎀
 ##### example 1
 <kbd>
 <img  src="Rubicon/assets/Screen Shot 2021-02-08 at 1.50.35 PM.png"/></p> 
