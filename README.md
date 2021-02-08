@@ -3,7 +3,7 @@
 Rubicon is a VScode extension that allows developers to make the timeconsuming task of writing documentaiton easier.
 
 ## Inspiration☀️ 
-Currently the process of writing documentation is After discovering Jinja's capabilities of rendering templates, we wanted to use Jinja to help convert user's documentation input, into exportable or saved files.
+Documentation is often overlooked because it takes time to write it and if not done fast the developers often procrastinate doing it. Aside from beign time consuming and expensive, it is challenging to maintain. Lastly, because of different styles and processes for writing documentation, it is often hard to read especially for bigger projects. After discovering Jinja's capabilities of rendering templates, we wanted to use Jinja to help convert user's documentation input, into exportable or saved files.
 
  <p align="center">
  <img  src="https://media.giphy.com/media/vJJILrBwPx2pT74eqA/giphy.gif" width="650" height="350"/></p>
