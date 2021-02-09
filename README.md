@@ -1,6 +1,6 @@
 # Rubicon 📝👾⌚
 ``` MLH Fellowship Hackathon Submission ```    
-Rubicon is a VScode extension that allows developers to make the time consuming task of writing documentaiton easier by allowing them to write code right in their code editor. 
+Rubicon is a VScode extension that allows developers to make the time consuming task of writing documentation easier by allowing them to write code right in their code editor. 
 
 ## Inspiration☀️ 
 Documentation is often overlooked because it takes time to write it and if not done fast the developers often procrastinate doing it. Aside from beign time consuming and expensive, it is challenging to maintain. Lastly, because of different styles and processes for writing documentation, it is often hard to read especially for bigger projects. After discovering Jinja's capabilities of rendering templates, we wanted to use Jinja to help convert user's documentation input, into exportable or saved files.
